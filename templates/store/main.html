@@ -105,6 +105,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	
 <!--snippet to identify visitors(bot detection )-->
+<!--
 <script>
     // Initialize the agent at application startup.
     const fpPromise = import('https://fpjscdn.net/v3/92PkXRCpVgM4SvUt1e7u')
@@ -120,5 +121,21 @@
       })
   </script>
 	
+-->
+
+<script>
+  // Initialize the agent on page load.
+  const fpPromise = import('https://fpjscdn.net/v3/8PNZjUEuMTrk92kbHKHe')
+    .then(FingerprintJS => FingerprintJS.load())
+
+  // Get the visitorId when you need it.
+  fpPromise
+    .then(fp => fp.get())
+    .then(result => {
+      const visitorId = result.visitorId
+      console.log(visitorId)
+    })
+
+</script>
 </body>
 </html>
