@@ -1,0 +1,126 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+
+<!--first row-->
+<div class="row">
+
+<!-- SNEAKER IMAGE-->
+	<div class="col-md-3">
+		<img class="thumbnail" src="{% static 'images/new-sneakers.jpg' %}" alt="Sneaker image">
+		<div class="box-element product">
+			<h6><strong>Sneaker</strong></h6>
+			<hr>
+			<button class="btn btn-outline-secondary add-btn">Add to Cart</button>
+			<a class="btn btn-outline-success" href="#">View</a>
+			<h4><strong>Tsh.35,000</strong></h4>
+		</div>
+	</div>
+	
+<!--BROWN-LEATHER-SHOES-->
+	<div class="col-md-3">
+		<img class="thumbnail" src="{% static 'images/brown-leather-shoes.jpg' %}" alt="brown-leather-shoes image">
+		<div class="box-element product">
+			<h6><strong>Leather shoe</strong></h6>
+			<hr>
+			<button  class="btn btn-outline-secondary add-btn">Add to Cart</button>
+			<a class="btn btn-outline-success" href="#">View</a>
+			<h4><strong>Tsh.50,000</strong></h4>	
+		</div>
+	</div>	
+	
+<!--AIR JORDAN-->
+	<div class="col-md-3">
+		<img class="thumbnail" src="{% static 'images/airjordan.jpg' %}" alt="airjordan image">
+		<div class="box-element product">
+			<h6><strong>Air jordan</strong></h6>
+			<hr>
+			<button class="btn btn-outline-secondary add-btn">Add to Cart</button>
+			<a class="btn btn-outline-success" href="#">View</a>
+			<h4><strong>Tsh.45,000</strong></h4>	
+		</div>
+	</div>
+	
+	<!--ADIDAS IMAGE-->
+	<div class="col-md-3">
+		<img class="thumbnail" src="{% static 'images/Adidas.jpg' %}" alt="adidas image">
+		<div class="box-element product">
+			<h6><strong>Adidas</strong></h6>
+			<hr>
+			<button class="btn btn-outline-secondary add-btn">Add to Cart</button>
+			<a class="btn btn-outline-success" href="#">View</a>
+			<h4><strong>Tsh.45,000</strong></h4>	
+		</div>
+	</div>
+</div>
+
+<!-- end of first row -->
+
+<!-- second row-->
+
+<!--CONVERSE IMAGE -->
+	<div class="row pt-2">
+		<div class="col-md-3">
+			<img class="thumbnail" src="{% static 'images/converse.jpg' %}" alt="Converse image">
+			<div class="box-element product">
+				<h6><strong>Converse</strong></h6>
+				<hr>
+				<button class="btn btn-outline-secondary add-btn">Add to Cart</button>
+				<a class="btn btn-outline-success" href="#">View</a>
+				<h4><strong>Tsh.30,000</strong></h4>
+			</div>
+		</div>
+<!--SWAG IMAGE -->
+		<div class="col-md-3">
+			<img class="thumbnail" src="{% static 'images/swag.jpg' %}" alt="Swag image">
+			<div class="box-element product">
+				<h6><strong>Swag</strong></h6>
+				<hr>
+				<button  class="btn btn-outline-secondary add-btn">Add to Cart</button>
+				<a class="btn btn-outline-success" href="#">View</a>
+				<h4><strong>Tsh.25,000</strong></h4>	
+			</div>
+		</div>	
+<!--VINTAGE IMAGE -->
+		<div class="col-md-3">
+			<img class="thumbnail" src="{% static 'images/vintage.jpg' %}" alt="Vintage image">
+			<div class="box-element product">
+				<h6><strong>Vintage</strong></h6>
+				<hr>
+				<button class="btn btn-outline-secondary add-btn">Add to Cart</button>
+				<a class="btn btn-outline-success" href="#">View</a>
+				<h4><strong>Tsh.45,000</strong></h4>	
+			</div>
+		</div>
+		
+<!--ads 1 & 2-->
+<div class="col-lg-3 pt-4">
+	<div id="image-container">
+        <img class="image" id="image1" src="{% static 'images/adsbanner/ad1.jpg' %} "alt="Ad 1">
+        <img class="image" id="image2" src="{% static 'images/adsbanner/ad2.jpg' %} " alt="Ad 2">
+    </div>
+		
+	</div>
+	
+</div>	
+
+<!-- end of secomd row-->
+
+<!-- start of third row-->
+<!---->
+<div class="row pt-2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="image-container1">
+                    <img class="image1" id="image1" src="{% static 'images/adsbanner/ad3.jpg' %}" alt="Ad 3">
+                    <img class="image1" id="image2" src="{% static 'images/adsbanner/ad4.png' %}" alt="Ad 4">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of third row -->
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+{% endblock content %}
