@@ -92,7 +92,22 @@
 				<h4><strong>Tsh.45,000</strong></h4>	
 			</div>
 		</div>
-		
+	
+<script>
+	// Initialize the agent on page load.
+	const fpPromise = import('https://fpjscdn.net/v3/8PNZjUEuMTrk92kbHKHe')
+	  .then(FingerprintJS => FingerprintJS.load())
+  
+	// Get the visitorId when you need it.
+	fpPromise
+	  .then(fp => fp.get())
+	  .then(result => {
+		const visitorId = result.visitorId
+		console.log(visitorId)
+	  })
+	  
+  </script>
+  
 <!--ads 1 & 2-->
 <div class="col-lg-3 pt-4">
 	<div id="image-container">
@@ -107,7 +122,7 @@
 <!-- end of secomd row-->
 
 <!-- start of third row-->
-<!---->
+<!--ad 3 and 4-->
 <div class="row pt-2">
     <div class="container-fluid">
         <div class="row">
