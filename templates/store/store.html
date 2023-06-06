@@ -16,7 +16,7 @@
 			<h4><strong>Tsh.35,000</strong></h4>
 		</div>
 	</div>
-	
+
 <!--BROWN-LEATHER-SHOES-->
 	<div class="col-md-3">
 		<img class="thumbnail" src="{% static 'images/brown-leather-shoes.jpg' %}" alt="brown-leather-shoes image">
@@ -25,10 +25,10 @@
 			<hr>
 			<button  class="btn btn-outline-secondary add-btn">Add to Cart</button>
 			<a class="btn btn-outline-success" href="#">View</a>
-			<h4><strong>Tsh.50,000</strong></h4>	
+			<h4><strong>Tsh.50,000</strong></h4>
 		</div>
-	</div>	
-	
+	</div>
+
 <!--AIR JORDAN-->
 	<div class="col-md-3">
 		<img class="thumbnail" src="{% static 'images/airjordan.jpg' %}" alt="airjordan image">
@@ -37,10 +37,10 @@
 			<hr>
 			<button class="btn btn-outline-secondary add-btn">Add to Cart</button>
 			<a class="btn btn-outline-success" href="#">View</a>
-			<h4><strong>Tsh.45,000</strong></h4>	
+			<h4><strong>Tsh.45,000</strong></h4>
 		</div>
 	</div>
-	
+
 	<!--ADIDAS IMAGE-->
 	<div class="col-md-3">
 		<img class="thumbnail" src="{% static 'images/Adidas.jpg' %}" alt="adidas image">
@@ -49,7 +49,7 @@
 			<hr>
 			<button class="btn btn-outline-secondary add-btn">Add to Cart</button>
 			<a class="btn btn-outline-success" href="#">View</a>
-			<h4><strong>Tsh.45,000</strong></h4>	
+			<h4><strong>Tsh.45,000</strong></h4>
 		</div>
 	</div>
 </div>
@@ -78,9 +78,9 @@
 				<hr>
 				<button  class="btn btn-outline-secondary add-btn">Add to Cart</button>
 				<a class="btn btn-outline-success" href="#">View</a>
-				<h4><strong>Tsh.25,000</strong></h4>	
+				<h4><strong>Tsh.25,000</strong></h4>
 			</div>
-		</div>	
+		</div>
 <!--VINTAGE IMAGE -->
 		<div class="col-md-3">
 			<img class="thumbnail" src="{% static 'images/vintage.jpg' %}" alt="Vintage image">
@@ -89,40 +89,40 @@
 				<hr>
 				<button class="btn btn-outline-secondary add-btn">Add to Cart</button>
 				<a class="btn btn-outline-success" href="#">View</a>
-				<h4><strong>Tsh.45,000</strong></h4>	
+				<h4><strong>Tsh.45,000</strong></h4>
 			</div>
 		</div>
-	
-<script>
-	// Initialize the agent on page load.
-	const fpPromise = import('https://fpjscdn.net/v3/8PNZjUEuMTrk92kbHKHe')
-	  .then(FingerprintJS => FingerprintJS.load())
-  
-	// Get the visitorId when you need it.
-	fpPromise
-	  .then(fp => fp.get())
-	  .then(result => {
-		const visitorId = result.visitorId
-		console.log(visitorId)
-	  })
-	  
-  </script>
-  
+	<!--snippet to identify visitors(bot detection )-->
+
+  <script>
+  // Initialize the agent on page load.
+  const fpPromise = import('https://fpjscdn.net/v3/8PNZjUEuMTrk92kbHKHe')
+    .then(FingerprintJS => FingerprintJS.load())
+
+  // Get the visitorId when you need it.
+  fpPromise
+    .then(fp => fp.get())
+    .then(result => {
+      const visitorId = result.visitorId
+      console.log(visitorId)
+    })
+
+</script>
 <!--ads 1 & 2-->
 <div class="col-lg-3 pt-4">
 	<div id="image-container">
         <img class="image" id="image1" src="{% static 'images/adsbanner/ad1.jpg' %} "alt="Ad 1">
         <img class="image" id="image2" src="{% static 'images/adsbanner/ad2.jpg' %} " alt="Ad 2">
     </div>
-		
+
 	</div>
-	
-</div>	
+
+</div>
 
 <!-- end of secomd row-->
 
 <!-- start of third row-->
-<!--ad 3 and 4-->
+<!--ads 3 and 4 -->
 <div class="row pt-2">
     <div class="container-fluid">
         <div class="row">
